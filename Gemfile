@@ -67,7 +67,7 @@ group :development, :test do
   # incompatible per https://github.com/dejan/rails_panel/issues/180
   # gem 'meta_request', '0.7.3'
   gem 'hirb', '0.7.3'
-  gem 'faker', '1.8.7'
+  gem 'faker', '3.1.0'
   gem 'populator', '1.0.0'
   gem 'factory_bot_rails', '4.8.2'
   gem 'simplecov', '0.15.1'
