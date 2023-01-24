@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '3.1.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '7.0.4'
@@ -44,7 +44,7 @@ gem 'simple_form', '4.0.0'
 gem 'materialize-form', '1.0.8'
 gem 'jquery-rails', '4.3.1'
 gem 'jquery-ui-rails', '6.0.1'
-gem 'cancancan', '2.1.2'
+gem 'cancancan', '3.4.0'
 # TODO: when 7.0.0 is released, don't download from git
 gem 'validates_timeliness', git: "https://github.com/adzap/validates_timeliness"
 gem 'time_date_helpers', '0.0.2'
@@ -62,7 +62,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 3.38.0'
   gem 'selenium-webdriver', '3.8.0'
-  # gem 'better_errors'
+  gem 'better_errors'
   gem 'binding_of_caller'
   # incompatible per https://github.com/dejan/rails_panel/issues/180
   # gem 'meta_request', '0.7.3'
