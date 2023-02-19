@@ -2,4 +2,4 @@
 //= link_directory ../javascripts .js
 //= link_directory ../stylesheets .css
 //= link_tree ../builds
-//= link best_in_place.js
+//= link gem_imports.js

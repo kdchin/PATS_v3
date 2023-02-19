@@ -11,16 +11,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require rails-ujs
-//= require materialize-sprockets
-//= require materialize-form
-//= require vue
-//= require best_in_place
-//= require_tree .
-//= require ./add_jquery
-//= require ./materialize
-
 // Sticky footer js
 // Thanks to Charles Smith for this -- http://foundation.zurb.com/forum/posts/629-sticky-footer
 
