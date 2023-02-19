@@ -1,5 +1,11 @@
 {
   "name": "PATS_v1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "esbuild": "^0.17.8",
+    "jquery": "^3.6.3"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+  }
 }
