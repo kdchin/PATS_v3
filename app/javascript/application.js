@@ -14,6 +14,9 @@
 // Sticky footer js
 // Thanks to Charles Smith for this -- http://foundation.zurb.com/forum/posts/629-sticky-footer
 
-import './add_jquery'
-import './materialize'
-import '../assets/javascripts/app.js'
+// import './add_jquery'
+// import '../assets/javascripts/app.js'
+
+$(function() {
+    console.log('hello world')
+})

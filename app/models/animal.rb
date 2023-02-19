@@ -1,5 +1,5 @@
 require 'helpers/deletions'
-require 'helpers/Activeable'
+require 'helpers/activeable'
 
 class Animal < ApplicationRecord
   include Deletions
