@@ -1,5 +1,9 @@
 <%= content_tag(:div, '', id:'visits', data: {
-    controller: "react"
+    controller: "react",
+    visit: @visit,
+    owner: @visit.owner,
+    animal: @visit.animal,
+    pet: @visit.pet,
 })%>
 
 <%= render partial: "partials/structure2", locals: {model_name: "visit", 
