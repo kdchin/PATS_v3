@@ -9,9 +9,6 @@ export default class extends Controller {
     console.log("React controller connected");
     const visit = document.getElementById('visits');
     const visitObj = JSON.parse(visit.getAttribute('data-visit'))
-    const animalObj = JSON.parse(visit.getAttribute('data-animal'))
-    const ownerObj = JSON.parse(visit.getAttribute('data-owner'))
-    const petObj = JSON.parse(visit.getAttribute('data-pet'))
-    createRoot(visit).render(<Visit visit={visitObj} owner={ownerObj} animal={animalObj} pet={petObj}/>);
+    createRoot(visit).render(<Visit visit={visitObj} />);
   }
 }

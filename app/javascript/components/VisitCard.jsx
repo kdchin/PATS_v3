@@ -1,8 +1,12 @@
 import React from 'react'
 
-function VisitCard({visit, pet, animal, owner}) {
+function VisitCard({visit}) {
   const date = new Date(visit.date.replace(/-/g, '\/'))
   const totalCharge = visit.total_charge ||= 0.00
+
+  const owner = visit.owner
+  const pet = visit.pet
+  const animalName = visit.animal.name
 
   var dateOptions = {month: 'long', day: 'numeric',  year: 'numeric'};
 
@@ -20,7 +24,7 @@ function VisitCard({visit, pet, animal, owner}) {
         <b>Pet:&nbsp;&nbsp;</b>
           <a href={`/pets/${pet.id}`}>{pet.name}</a><br /><br />
         <b>Animal:&nbsp;&nbsp;</b>
-          {animal.name}<br /><br />
+          {animalName}<br /><br />
 
         <b>Owner:&nbsp;&nbsp;</b>
           <a href={`/owners/${owner.id}`}>{`${owner.last_name}, ${owner.first_name}`}</a><br /><br />
